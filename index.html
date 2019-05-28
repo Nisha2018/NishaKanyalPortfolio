@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+</head>
+
+<body>
+  <!--Fixed section or Navbar-->
+  <div class="buttons">
+    <button class="toggle"><i class="fas fa-bars fa-2x"></i></button>
+    <button class="close"><i class="fas fa-times fa-3x"></i></button>
+  </div>
+  <nav>
+    <section class="pic">
+      <img class="img" src="Images/18.jpg" alt="image" />
+    </section>
+    <section class="menu">
+      <a href="#home"><span>Home</span></a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">My Work</a>
+      <a href="#contact"><span>How to reach me</span></a>
+    </section>
+  </nav>
+  <!--Fixed section or Navbar ends-->
+
+  <!--Main container starts-->
+  <main>
+    <!--Home section starts-->
+    <div class="home" id="home">
+      <section class="overlay">
+        <section class="profile">
+          <h1>Nisha <span> Kanyal</span></h1>
+          <button id="resume" onclick="window.location.assign(' docs/resume.pdf')">Download Resume</a> </button> <a
+            href="#twitter" id="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#facebook" id="facebook"><i class="fab fa-facebook-square"></i></a>
+          <a href="#linkedin" id="linkedin"><i class="fab fa-linkedin"></i></a>
+          <a href="#github" id="github"><i class="fab fa-github"></i></a>
+        </section>
+      </section>
+    </div>
+
+    <!--About me section starts-->
+    <div class="about" id="about">
+      <div class="header">
+        <h1>About <span>Me</span></h1>
+        <p>Let me tell you a few things...</p>
+      </div>
+      <div class="image">
+        <img class="img" src="Images/18.jpg" alt="image" />
+      </div>
+      <div class="bio">
+        <h1><span>BIO</span></h1>
+        <p class="intro">
+          A Student of Guru Gobind Singh Indraprashtha University, sector
+          -16C Dwarka , pursuing MCA(SE) (2016-2019). I am looking for a
+          responsible and challenging full-time career in a reputed
+          organization to serve with best of my skills and ability. I have
+          good problem solving abilities, excellent verbal and written
+          communication skills. Result oriented, selft driven, highly
+          motivated, smart and hungry to learn new technologies,
+          methodologies, strategies and processes.
+        </p>
+      </div>
+      <div class="education">
+        <section>
+          <span><i class="fas fa-graduation-cap"></i></span>
+          <h1>Master of Computer Applications</h1>
+          <p>Guru Gobind Singh Indraprastha University, USICT</p>
+          <p>(2016-2019)</p>
+
+          <section class="hide">
+            <span><i class="fas fa-graduation-cap"></i></span>
+            <h1>Master of Computer Applications</h1>
+            <p>Percentage scored:</p>
+            <p>Result awaited</p>
+          </section>
+        </section>
+
+        <section>
+          <span><i class="fas fa-graduation-cap"></i></span>
+          <h1>Bachelor of Computer Applications</h1>
+          <p>University of Mysore</p>
+          <p>(2013-2016)</p>
+
+          <section class="hide" id="hide-bca">
+            <span><i class="fas fa-graduation-cap"></i></span>
+            <h1>Bachelor of Computer Applications</h1>
+            <p>Percentage scored:</p>
+            <p>69%</p>
+          </section>
+        </section>
+
+        <section>
+          <span><i class="fas fa-graduation-cap"></i></span>
+          <h1>12th</h1>
+          <p>Army Public School, Delhi Cantt</p>
+          <p>CBSE board</p>
+          <p>2013</p>
+
+          <section class="hide">
+            <span><i class="fas fa-graduation-cap"></i></span>
+            <h1>12th</h1>
+            <p>Percentage scored:</p>
+            <p>69%</p>
+          </section>
+        </section>
+        <section>
+          <span><i class="fas fa-graduation-cap"></i></span>
+          <h1>10th</h1>
+          <p>Army Public School, Delhi Cantt</p>
+          <p>CBSE board</p>
+          <p>2011</p>
+
+          <section class="hide">
+            <span><i class="fas fa-graduation-cap"></i></span>
+            <h1>10th</h1>
+            <p>Percentage scored:</p>
+            <p>91%</p>
+          </section>
+        </section>
+      </div>
+    </div>
+    <!--About Me Ends-->
+
+    <!--Skills section starts-->
+    <div class="skills1" id="skills">
+      <div class="header">
+        <h1>
+          <span><i class="fas fa-cogs"></i></span>Skills
+        </h1>
+      </div>
+      <div class="bars">
+        <p>HTML/CSS</p>
+        <div class="container">
+          <div class="skills html">95%</div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="container">
+          <div class="skills js">75%</div>
+        </div>
+
+        <p>jQuery</p>
+        <div class="container">
+          <div class="skills jquery">75%</div>
+        </div>
+
+        <p>Bootstrap 4</p>
+        <div class="container">
+          <div class="skills bootstrap">75%</div>
+        </div>
+      </div>
+    </div>
+
+    <!--My Work section starts-->
+    <div class="work" id="work">
+      <div class="header">
+        <h1>My <span>Work</span></h1>
+        <p>Check out some of my Projects...</p>
+      </div>
+      <div class="projects">
+        <section class="item">
+          <a href="https://nisha2018.github.io/MyWebsite/"><img src="Images/14.jpg" alt="project1" /></a>
+          <a href="https://nisha2018.github.io/MyWebsite/"><i class="fas fa-eye"></i>My Website</a>
+          <a href=" https://nisha2018.github.io/MyWebsite/"><i class="fab fa-github"></i>Github</a>
+        </section>
+        <section class="item">
+          <a href="#"><img src="Images/13.jpg" alt="project2" /></a>
+          <a href="#"><i class="fas fa-eye"></i>Analog Clock</a>
+          <a href=" https://nisha2018.github.io/Clock/"><i class="fab fa-github"></i>Github</a>
+        </section>
+        <section class="item">
+          <a href="#"><img src="Images/15.jpg" alt="project3" /></a>
+          <a href="#"><i class="fas fa-eye"></i>Project</a>
+          <a href="#"><i class="fab fa-github"></i>Github</a>
+        </section>
+        <section class="item">
+          <a href="#"><img src="Images/16.jpg" alt="project4" /></a>
+          <a href="#"><i class="fas fa-eye"></i>Project</a>
+          <a href="#"><i class="fab fa-github"></i>Github</a>
+        </section>
+        <section class="item">
+          <a href="#"><img src="Images/17.jpg" alt="project5" /></a>
+          <a href="#"><i class="fas fa-eye"></i>Project</a>
+          <a href="#"><i class="fab fa-github"></i>Github</a>
+        </section>
+        <section class="item">
+          <a href="#"><img src="Images/13.jpg" alt="project6" /></a>
+          <a href="#"><i class="fas fa-eye"></i>Project</a>
+          <a href="#"><i class="fab fa-github"></i>Github</a>
+        </section>
+      </div>
+    </div>
+
+    <!--Contact Me section starts-->
+    <div class="contact" id="contact">
+      <div class="header">
+        <h1>Contact <span>Me</span></h1>
+        <p>This is how you can reach me...</p>
+      </div>
+      <div class="boxes">
+        <div>
+          <span>Email:</span>
+          kanyalnisha26@gmail.com
+        </div>
+        <div>
+          <span>Phone:</span>
+          9971975074
+        </div>
+        <div>
+          <span>Address:</span>
+          House no. 29A, Dwarka mor ,New Delhi - 110043
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--Main container ends-->
+
+  <!--Scripts included-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="portfolio.js"></script>
+</body>
+
+</html>
