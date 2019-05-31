@@ -21,7 +21,7 @@ body {
 .buttons {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .toggle,
@@ -64,10 +64,12 @@ main {
 }
 
 .profile {
-  width: 1000px;
-  height: 300px;
+  width: 320px;
+  height: 200px;
   color: white;
-  padding: 300px 0 0 540px;
+  position: relative;
+  top: 40%;
+  left: 40%;
 }
 
 h1 {
@@ -105,7 +107,7 @@ span {
   color: #30a3e6;
 }
 
-#facebook > i:hover {
+#codepen > i:hover {
   color: #4a4f88;
 }
 
@@ -124,6 +126,7 @@ nav {
   height: 100vh;
   position: fixed;
   display: none;
+  z-index: 1;
 }
 
 .pic {
@@ -281,6 +284,7 @@ p {
 
 /*About Page Ends*/
 
+
 /*Skills Page*/
 
 .skills1 {
@@ -288,6 +292,8 @@ p {
   height: 100vh;
   background-image: url("Images/19.jpg");
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 .skills1 .header h1 {
@@ -306,49 +312,40 @@ p {
   margin-right: 20px;
 }
 
-.bars {
-  margin-left: 450px;
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.bars p {
-  margin-bottom: 10px;
-  font-size: 16px;
+.progress-bar {
+  width: 500px;
+  height: 42px;
+  background-color: #ddd;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-title {
+  height: 42px;
+  line-height: 42px;
+  padding-left: 15px;
+  font-weight: bold;
+  width: 10%;
+}
+
+.progress-rate {
+  padding-right: 15px;
   font-weight: bold;
 }
 
-/* Container for skill bars */
-.container {
-  width: 500px;
-  background-color: #ddd;
-  box-shadow: 2px 2px 10px black;
-}
-
-.skills {
-  text-align: right;
-  padding: 10px;
-  color: white;
-}
-
-.skills1 .header h1 {
-  padding-bottom: 50px;
-}
-
-.html {
-  width: 95%;
-  background-color: #4caf50;
-}
-.bootstrap {
-  width: 75%;
-  background-color: salmon;
-}
-.js {
-  width: 75%;
-  background-color: #2196f3;
-}
-.jquery {
-  width: 75%;
-  background-color: #808080;
-}
 
 /*Work Page*/
 
@@ -420,6 +417,7 @@ p {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 4rem;
+  padding: 15px;
 }
 
 .boxes div {
@@ -451,17 +449,10 @@ p {
 
 /* tablet, landscape, low resolution laptops and desktop */
 @media (max-width: 990px){
-  .profile {
-    padding: 300px 0 0 200px;
-  }
-
+  
   .header {
     padding-top: 40px;
     text-align: center;
-  }
-
-  .bars {
-    margin-left:50px;
   }
 
   .about {
@@ -477,6 +468,11 @@ p {
 
 /* portrait tablet, e-readers kindle */
 @media (max-width: 800px){
+
+  .progress-bar {
+    width: 400px;
+  }
+
   .boxes div {
     display: block;
     width: 70%;
@@ -488,13 +484,6 @@ p {
 
 /* smartphones, Android phones, landscape iPhone */
 @media (max-width: 600px){
-  .profile {
-    padding: 300px 0 0 100px;
-  }
-
-  .container {
-    width: 400px;
-  }
 
   .header h1{
     font-size: 45px;
@@ -528,20 +517,25 @@ p {
   .menu > a {
     font-size: 25px;
   }
+
+  .profile {
+    left: 20%;
+  }
+
+  .progress-bar {
+    width: 300px;
+  }
 }
 
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 @media (max-width: 480px){
-  .profile {
-    padding: 300px 0 0 80px;
-  }
-
-  .container {
-    width: 300px;
-  }
   
   .boxes div {
     font-size: 20px;
     padding: 8px 10px;
+  }
+
+  .profile {
+    left: 10%;
   }
 }
