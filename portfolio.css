@@ -63,6 +63,12 @@ main {
   background: rgba(0, 0, 0, 0.8);
 }
 
+.logo{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
 .profile {
   width: 320px;
   height: 200px;
@@ -116,7 +122,7 @@ span {
 }
 
 #github > i:hover {
-  color: #ff5722;
+  color: purple;
 }
 
 /*Navbar styling*/
@@ -529,6 +535,11 @@ p {
 
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 @media (max-width: 480px){
+
+  .logo{
+   top: 150px;
+   left: 150px;
+  }
   
   .boxes div {
     font-size: 20px;
